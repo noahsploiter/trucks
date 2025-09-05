@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import {
   EnvironmentOutlined,
   DollarOutlined,
@@ -21,11 +22,13 @@ export default function TruckCard({ truck }) {
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        <div className="relative">
-          <img
+        <div className="relative h-56">
+          <Image
             src={truck.image}
             alt={truck.name}
-            className="w-full h-56 object-cover"
+            fill
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           <div className="absolute top-4 right-4">
             <Tag

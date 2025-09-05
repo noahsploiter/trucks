@@ -24,8 +24,8 @@ export default function Home() {
           </h1>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
             Choose from our wide range of trucks available across Ethiopia.
-            Whether you need a small delivery van or a heavy-duty truck, we've
-            got you covered.
+            Whether you need a small delivery van or a heavy-duty truck,
+            we&apos;ve got you covered.
           </p>
         </div>
 
